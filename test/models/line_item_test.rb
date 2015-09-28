@@ -6,15 +6,10 @@
 # We make no guarantees that this code is fit for any purpose. 
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
-class CreateProducts < ActiveRecord::Migration
-  def change
-    create_table :products do |t|
-      t.string :title
-      t.text :description
-      t.string :image_url
-      t.decimal :price, precision: 8, scale: 2
+require 'test_helper'
 
-      t.timestamps
-    end
-  end
+class LineItemTest < ActiveSupport::TestCase
+  # test "the truth" do
+  #   assert true
+  # end
 end
